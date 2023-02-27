@@ -1,0 +1,11 @@
+{
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "trailing",
+  "editor.rulers": [130],
+  "workbench.editor.enablePreview": true,
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+  "terminal.integrated.scrollback": 100000000,
+  "liveServer.settings.port": 5501,
+  "prettier.printWidth": 130
+}

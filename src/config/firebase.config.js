@@ -1,15 +1,16 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+import { config } from './config';
 
-const config = {
-  apiKey: "AIzaSyDspkToMHBN04frvAFDUXuUHG2_VjAa7B0",
-  authDomain: "fir-react-91015.firebaseapp.com",
-  projectId: "fir-react-91015",
-  storageBucket: "fir-react-91015.appspot.com",
-  messagingSenderId: "239939639539",
-  appId: "1:239939639539:web:70b472177da6babd733f86",
-  measurementId: "G-JEBNSJZLDV"
+const firebaseConfig = {
+  apiKey: config.firebase.API_KEY,
+  authDomain: config.firebase.AUTH_DOMAIN,
+  projectId: config.firebase.PROJECT_ID,
+  storageBucket: config.firebase.STORAGE_BUCKET,
+  messagingSenderId: config.firebase.MESSAGING_SENDER_ID,
+  appId: config.firebase.APP_ID,
+  measurementId: config.firebase.MEASUREMENT_ID,
 };
 
-const app = initializeApp(config);
+const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);

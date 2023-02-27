@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
-import { config } from './config';
+import { config } from '../src/config/config';
 
 const firebaseConfig = {
   apiKey: config.firebase.API_KEY,
